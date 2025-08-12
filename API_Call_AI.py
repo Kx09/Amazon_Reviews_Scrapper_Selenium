@@ -5,7 +5,7 @@ import requests
 import json
 
 
-API_KEY = "sk-vKYmVtdqNF8bNfPvvCsXZg"
+API_KEY = "YOUR API KEY HERE"
 
 url = "https://api.ppq.ai/chat/completions"
 
@@ -219,4 +219,5 @@ response = requests.post(url, headers=headers, json=data)
 output = response.json()
 
 print(output)
+
 print("Data saved to output.json")
