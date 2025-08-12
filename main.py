@@ -39,8 +39,8 @@ credentials = {
 
 
 
-
-driver.get("https://www.amazon.co.uk/product-reviews/B0BCK9SF96/ref=cm_cr_getr_d_paging_btm_next_2?ie=UTF8&filterByStar=critical&reviewerType=all_reviews&pageNumber=26")
+#enter your URL for reviews here 
+driver.get("[ENTER REVIEWS URL HERE]")
 time.sleep(60)
 
 #soup = BeautifulSoup(driver.page_source, "html.parser")
@@ -82,5 +82,6 @@ df.to_csv('reviews_all.csv', index=False)
 print("data sucessfully saved to csv")
 #print(driver.page_source)
 #driver.quit()
+
 
 #class="a-size-base a-link-normal review-title a-color-base review-title-content a-text-bold"
